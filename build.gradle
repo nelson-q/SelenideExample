@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'com.codeborne:selenide:7.0.4'
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0-rc1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+    implementation 'org.jsoup:jsoup:1.7.2'
+}
+
+test {
+    useJUnitPlatform()
+}
