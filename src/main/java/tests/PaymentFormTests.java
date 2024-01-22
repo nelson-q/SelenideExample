@@ -41,10 +41,9 @@ public class PaymentFormTests {
 
   @Test
   public void paymentFormCardBrandTest() {
-    var url = PageUrl.PAYMENT_FORM_CARD_BRAND_URL.url;
     var expectedCardBrands = List.of("visa", "mastercard", "maestro");
 
-    Selenide.open(url);
+    Selenide.open(FORM_URL);
     paymentFormPage.switchToFormIframe();
     //size P.S. start from 1
     paymentFormPage.cardBrands.shouldHave(CollectionCondition.size(3));

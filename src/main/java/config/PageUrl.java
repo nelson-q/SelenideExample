@@ -11,8 +11,7 @@ public enum PageUrl {
   PAYMENT_PAGE_7("https://payment-page.solidgate.com/N8Xy45N"),
   PAYMENT_PAGE_8("https://payment-page.solidgate.com/AnB53gA"),
   PAYMENT_PAGE_SUBMITTED("https://payment-page.solidgate.com/AYZWYvN"),
-  PAYMENT_FORM_URL("https://qa-webservice.solidgate-management.com/texts/c32671b3-ea0f-4dff-834e-d742cb3cb989"),
-  PAYMENT_FORM_CARD_BRAND_URL("https://qa-webservice.solidgate-management.com/texts/c5469748-4ed0-4ffa-af79-334eea5350d5"),
+  PAYMENT_FORM_URL("https://qa-webservice.solidgate-management.com/texts/e5260b9b-0fa8-4d0a-9afd-8acfa75395d1"),
   WIKI("https://www.wikipedia.org/");
 
   public final String url;

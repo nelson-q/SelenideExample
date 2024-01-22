@@ -7,7 +7,6 @@ import com.codeborne.selenide.TextCheck;
 import com.codeborne.selenide.WebDriverRunner;
 import java.util.List;
 import java.util.logging.Level;
-import org.openqa.selenium.bidi.log.LogLevel;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 
