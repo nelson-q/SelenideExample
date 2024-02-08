@@ -19,7 +19,7 @@ public class ExampleTest {
     yakabooPage.closeDialogModal();
 
     yakabooPage.someButton.click();
-    yakabooPage.someSecondButton.click();
+    yakabooPage.booksResultList.first().click();
     yakabooPage.checkBookAvailability();
   }
 }

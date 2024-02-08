@@ -1,8 +1,10 @@
 package example;
 
+import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.$x;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
@@ -12,7 +14,7 @@ public class YakabooPage {
   public SelenideElement someElement = $x("//div[@class='cl-widget-f8519v8519']");
   public SelenideElement dialogIconButton = $x("//div[@class='cl-dialog-close-icon']");
   public SelenideElement someButton = $x("//div[@class='ui-search-form-input']//button[@class='ui-btn-primary']");
-  public SelenideElement someSecondButton = $x("//div[@class='category-card category-layout expanded'][1]");
+  public ElementsCollection booksResultList = $$("[class='category-card category-layout expanded']");
   public SelenideElement availabilityStatus =
       $x("//section[@class='side']//div[@class='ui-shipment-status available']");
   public SelenideElement paperBookPrice = $x("//section[@class='side']//div[@class='ui-price-display__main']");
@@ -25,9 +27,7 @@ public class YakabooPage {
   }
 
   public void closeDialogModal() {
-    if (someElement.is(Condition.visible)) {
-      dialogIconButton.click();
-    }
+    dialogIconButton.shouldBe(Condition.visible).click();
   }
 
   public void checkBookAvailability() {
